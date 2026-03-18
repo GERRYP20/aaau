@@ -1,0 +1,14 @@
+// Test 08: ERROR - Operadores logicos con tipos incorrectos
+// && y || requieren operandos booleanos
+structure Main (
+    public const void main [ ] (
+        bool flag1;
+        bool flag2;
+        bool resultado;
+        
+        flag1 = true;
+        flag2 = false;
+        
+        resultado = flag1 && flag2;
+    )
+)

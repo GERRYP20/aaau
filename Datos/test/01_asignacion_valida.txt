@@ -1,0 +1,18 @@
+// Test 01: Asignacion valida - Tipos compatibles
+structure Main (
+    public const void main [ ] (
+        int edad;
+        float precio;
+        string nombre;
+        bool activo;
+        char grado;
+        
+        edad = 25;
+        precio = 19.99;
+        nombre = "Juan";
+        activo = true;
+        grado = 'A';
+        
+        print["Asignaciones validas completadas"];
+    )
+)

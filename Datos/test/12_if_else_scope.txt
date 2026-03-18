@@ -1,0 +1,21 @@
+// Test 12: Scope en if-else - Variables en diferentes bloques
+// Las variables declaradas en bloques padres son accesibles en hijos
+// Las variables declaradas en bloques hijos NO son accesibles desde padres
+structure Main (
+    public const void main [ ] (
+        int variableGlobal;
+        
+        variableGlobal = 10;
+        
+        if (variableGlobal > 5) (
+            int variableIf;
+            variableIf = 20;
+            print[variableIf];
+        ) else (
+            int variableElse;
+            variableElse = 30;
+        )
+        
+        print[variableGlobal];
+    )
+)

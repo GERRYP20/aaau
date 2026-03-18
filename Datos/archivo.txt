@@ -1,0 +1,14 @@
+// Test 02: Constantes - Declaracion y uso correcto
+structure Main (
+    public const void main [ ] (
+        const int MAXIMO = 100;
+        const float PI = 3;
+        const string TITULO = "Prueba";
+        const bool VERDADERO = true;
+        
+        int valor;
+        valor = MAXIMO;
+        print[valor];
+    )
+)
+

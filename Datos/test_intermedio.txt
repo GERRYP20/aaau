@@ -1,0 +1,35 @@
+// Intermediate Code Generation Test
+// Tests: arithmetic (+, -, *, /), logical (&&, ||), 
+//        relational (==, !=, <, >), flow control (if, while)
+
+structure Main (
+    public const void main [ ] (
+        int x;
+        int y;
+        int z;
+        int resultado;
+        
+        x = 15;
+        y = 4;
+        z = 3;
+        
+        // Operación aritmética compleja (se eliminó el módulo % para funcionalidad)
+        resultado = (x + y) * z - (x / y);
+        
+        // Expresión lógica
+        bool condicion;
+        condicion = (x > y) && (z != 0);
+        
+        // Estructura de control con expresión anidada
+        if (resultado > 10) (
+            resultado = resultado - 1;
+        )
+        
+        // Ciclo while con expresiones de incremento
+        while (x < 20) (
+            x = x + 1;
+        )
+        
+        print[resultado];
+    )
+)

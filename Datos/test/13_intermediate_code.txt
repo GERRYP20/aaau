@@ -1,0 +1,47 @@
+// Test 13: Intermediate Code Generation
+// Tests: arithmetic (+, -, *, /, %), logical (&&, ||), 
+//        relational (==, !=, <, >), flow control (if, while)
+
+structure Main (
+    public const void main [ ] (
+        int a;
+        int b;
+        int c;
+        int resultado;
+        int residuo;
+        bool flag1;
+        bool flag2;
+        bool condicion;
+        
+        // Basic arithmetic
+        a = 10;
+        b = 3;
+        c = 2;
+        
+        // Addition and multiplication - tests operator precedence
+        resultado = a + b * c;
+        
+        // Modulo operator
+        residuo = a % b;
+        
+        // Subtraction and division with parentheses
+        resultado = (a - b) / c;
+        
+        // Logical operators
+        flag1 = true;
+        flag2 = false;
+        condicion = flag1 && flag2;
+        
+        // Conditional with arithmetic
+        if (resultado > 5) (
+            resultado = resultado + 1;
+        )
+        
+        // While loop with expressions
+        while (a < 20) (
+            a = a + 1;
+        )
+        
+        print[resultado];
+    )
+)

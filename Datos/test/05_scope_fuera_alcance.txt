@@ -1,0 +1,15 @@
+// Test 05: ERROR - Scope fuera de alcance
+// Intentar acceder variable declarada en un bloque interno desde afuera
+// Nota: El scope funciona al reves - una variable de bloque padre es accesible en hijos
+// Este test intenta acceder una variable de un bloque hijo que ya termino
+structure Main (
+    public const void main [ ] (
+        if (true) (
+            int variableInterna;
+            variableInterna = 10;
+        )
+        
+        int resultado;
+        resultado = variableInterna;
+    )
+)

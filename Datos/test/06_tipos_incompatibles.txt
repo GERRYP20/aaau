@@ -1,0 +1,11 @@
+// Test 06: ERROR - Tipos incompatibles
+// Asignar valor de tipo diferente al declarado
+structure Main (
+    public const void main [ ] (
+        int numero;
+        string texto;
+        
+        numero = "hola";
+        texto = 42;
+    )
+)

@@ -1,0 +1,23 @@
+// Test 09: Operadores relacionales
+// <, >, <=, >= requieren operandos numericos del mismo tipo
+// El resultado es de tipo bool
+structure Main (
+    public const void main [ ] (
+        int a;
+        int b;
+        bool menor;
+        bool mayor;
+        bool menorIgual;
+        bool mayorIgual;
+        
+        a = 10;
+        b = 5;
+        
+        menor = a < b;
+        mayor = a > b;
+        menorIgual = a <= b;
+        mayorIgual = a >= b;
+        
+        print[mayor];
+    )
+)

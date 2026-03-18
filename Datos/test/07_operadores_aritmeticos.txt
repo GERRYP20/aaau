@@ -1,0 +1,22 @@
+// Test 07: Operadores aritmeticos
+// +, -, *, / requieren operandos del mismo tipo numerico
+structure Main (
+    public const void main [ ] (
+        int a;
+        int b;
+        int suma;
+        int resta;
+        int producto;
+        int division;
+        
+        a = 10;
+        b = 5;
+        
+        suma = a + b;
+        resta = a - b;
+        producto = a * b;
+        division = a / b;
+        
+        print[suma];
+    )
+)

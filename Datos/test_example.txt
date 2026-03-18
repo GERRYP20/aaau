@@ -1,0 +1,329 @@
+
+structure Main (
+    public const void main [ ] (
+        // DECLARACIONES
+        int counter;
+        int value;
+        int firstNum;
+        int secondNum;
+        
+        float price;
+        float rate;
+        
+        double pi;
+        double scientific;
+        
+        string name;
+        string message;
+        
+        char grade;
+        char symbol;
+        
+        bool isActive;
+        bool isValid;
+        // INICIALIZACION        
+        counter = 0;
+        value = 100;
+        firstNum = 10;
+        secondNum = 20;
+        
+        price = 19.99;
+        rate = 3.14;
+        
+        pi = 3.14159265359;
+        scientific = 1.5e10;
+        
+        name = "John Doe";
+        message = "Hello, World!";
+        
+        grade = 'A';
+        symbol = '$';
+        
+        isActive = true;
+        isValid = false;
+        
+     
+        // OPERACIONES ARITMETICAS
+        
+        int sum;
+        int difference;
+        int product;
+        int quotient;
+        
+        sum = firstNum + secondNum;
+        difference = secondNum - firstNum;
+        product = firstNum * secondNum;
+        quotient = secondNum / firstNum;
+        
+        float result;
+        result = price + rate;
+        result = price - rate;
+        result = price * rate;
+        result = price / rate;
+        
+        // OPERACION ARITMETICA COMPLEJA
+        int complex;
+        complex = (firstNum + secondNum) * 2 - 5;
+        
+        // comparacion
+        
+        bool comparison;
+        comparison = firstNum == secondNum;
+        comparison = firstNum != secondNum;
+        comparison = firstNum < secondNum;
+        comparison = firstNum > secondNum;
+        comparison = firstNum <= secondNum;
+        comparison = firstNum >= secondNum;
+        
+        // ========================================
+        // LOGICAL OPERATORS
+        // ========================================
+        
+        bool logicalAnd;
+        bool logicalOr;
+        bool logicalNot;
+        
+        logicalAnd = (firstNum < secondNum) && (counter == 0);
+        logicalOr = (firstNum > 0) || (secondNum < 0);
+        
+        // ========================================
+        // IF-ELSEIF-ELSE STATEMENTS
+        // ========================================
+        
+        if (counter == 0) (
+            print["Counter is zero"];
+        )
+        
+        if (firstNum > secondNum) (
+            print["First is greater"];
+        ) else (
+            print["Second is greater or equal"];
+        )
+        
+        if (firstNum > secondNum) (
+            print["First is greater"];
+        ) elseif (firstNum == secondNum) (
+            print["They are equal"];
+        ) else (
+            print["Second is greater"];
+        )
+        
+        // Nested if statements
+        if (isActive) (
+            if (isValid) (
+                print["Active and valid"];
+            ) else (
+                print["Active but not valid"];
+            )
+        )
+        
+        // ========================================
+        // WHILE LOOPS
+        // ========================================
+        
+        int i;
+        i = 0;
+        
+        while (i < 5) (
+            print[i];
+            i = i + 1;
+        )
+        
+        // While with comparison
+        while (counter < 10) (
+            counter = counter + 1;
+            print[counter];
+        )
+        
+        // While with logical operator
+        while ((counter < 15) && (isActive)) (
+            counter = counter + 1;
+        )
+        
+        // ========================================
+        // FOR LOOPS
+        // ========================================
+        
+        int j;
+        j = 0;
+        
+        for (j = 0; j < 5; j = j + 1;) (
+            print[j];
+        )
+        
+        // For loop with arithmetic
+        int k;
+        k = 1;
+        
+        for (k = 1; k <= 10; k = k + 1;) (
+            int square;
+            square = k * k;
+            print[square];
+        )
+        
+        // ========================================
+        // BREAK AND CONTINUE
+        // ========================================
+        
+        int m;
+        m = 0;
+        
+        while (m < 10) (
+            m = m + 1;
+            if (m == 5) (
+                break;
+            )
+            print[m];
+        )
+        
+        int n;
+        n = 0;
+        
+        while (n < 5) (
+            n = n + 1;
+            if (n == 3) (
+                continue;
+            )
+            print[n];
+        )
+        
+        // ========================================
+        // TRY-CATCH BLOCKS
+        // ========================================
+        
+        try (
+            print["Inside try block"];
+        ) catch (
+            print["Error caught"];
+        )
+        
+        // Try-catch-finally
+        try (
+            print["Attempting operation"];
+        ) catch (
+            print["Exception handled"];
+        ) finally (
+            print["Cleanup executed"];
+        )
+        
+        // Nested try blocks
+        try (
+            print["Outer try"];
+            
+            try (
+                print["Inner try"];
+            ) catch (
+                print["Inner catch"];
+            )
+            
+        ) catch (
+            print["Outer catch"];
+        )
+        
+        // ========================================
+        // THROW STATEMENTS
+        // ========================================
+        
+        try (
+            if (price < 0) (
+                print["Invalid Price"];
+            )
+            print["Price is valid"];
+        ) catch (
+            print["Error: Negative price"];
+        )
+        
+        // ========================================
+        // PRINT STATEMENTS WITH EXPRESSIONS
+        // ========================================
+        
+        print["Simple string"];
+        print[counter];
+        print[price];
+        print[pi];
+        print[grade];
+        print[isActive];
+        
+        // Print with arithmetic
+        print[firstNum + secondNum];
+        print[firstNum - secondNum];
+        print[firstNum * secondNum];
+        print[secondNum / firstNum];
+        
+        // Print with comparison results
+        print[firstNum == secondNum];
+        print[firstNum < secondNum];
+        print[firstNum > secondNum];
+        
+        // Print with logical operators
+        print[isActive && isValid];
+        print[isActive || isValid];
+        print[!isActive];
+        
+        // Print with complex expressions
+        print[(firstNum + secondNum) * 2];
+        print[(price > 10) && (rate < 5)];
+        
+        // ========================================
+        // MORE COMPLEX NESTED STRUCTURES
+        // ========================================
+        
+        // Loop inside if
+        if (isActive) (
+            int p;
+            p = 0;
+            while (p < 3) (
+                print[p];
+                p = p + 1;
+            )
+        )
+        
+        // If inside loop
+        int q;
+        q = 0;
+        
+        while (q < 5) (
+            q = q + 1;
+            if ((q + 2) == 0) (
+                print["Even number"];
+            ) else (
+                print["Odd number"];
+            )
+        )
+        
+        // Try-catch inside loop
+        int r;
+        r = 0;
+        
+        while (r < 3) (
+            r = r + 1;
+            try (
+                print["Attempt"];
+            ) catch (
+                print["Error"];
+            )
+        )
+        
+        // Multiple nested levels
+        if (isActive) (
+            int s;
+            s = 0;
+            while (s < 2) (
+                s = s + 1;
+                if (s == 1) (
+                    try (
+                        print["Try block"];
+                    ) catch (
+                        print["Catch block"];
+                    )
+                )
+            )
+        )
+        
+        // ========================================
+        // FINAL OUTPUT
+        // ========================================
+        
+        print["Program completed successfully"];
+    )
+)

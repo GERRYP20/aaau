@@ -1,0 +1,9 @@
+// Test 03: ERROR - Reasignar constante
+// Debe generar error: La variable es una constante y no puede ser modificada
+structure Main (
+    public const void main [ ] (
+        const int MAXIMO = 100;
+        
+        MAXIMO = 200;
+    )
+)

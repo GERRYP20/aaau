@@ -1,0 +1,19 @@
+// Test 10: Operadores de igualdad
+// == y != requieren operandos del mismo tipo
+// El resultado es de tipo bool
+structure Main (
+    public const void main [ ] (
+        int a;
+        int b;
+        bool igual;
+        bool diferente;
+        
+        a = 10;
+        b = 10;
+        
+        igual = a == b;
+        diferente = a != b;
+        
+        print[igual];
+    )
+)

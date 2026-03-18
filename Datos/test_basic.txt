@@ -1,0 +1,10 @@
+
+structure Main (
+    public const void main [ ] (
+        // Simple test cases
+        int simple;
+        simple = 10;
+        
+        print["Basic declaration works"];
+    )
+)

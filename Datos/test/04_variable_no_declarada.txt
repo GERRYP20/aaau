@@ -1,0 +1,8 @@
+// Test 04: ERROR - Variable no declarada
+// Debe generar error: La variable no ha sido declarada
+structure Main (
+    public const void main [ ] (
+        int x;
+        x = y;
+    )
+)

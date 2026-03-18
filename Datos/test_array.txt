@@ -1,0 +1,15 @@
+
+structure Main (
+    public const void main [ ] (
+        // Array declarations
+        int numbers[10];
+        bool flags[5];
+        float prices[3];
+        
+        // Array with initialization
+        int arr[5] = {1, 2, 3, 4, 5};
+        
+        // Test printing
+        print["Arrays declared successfully"];
+    )
+)
